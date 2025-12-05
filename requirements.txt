@@ -1,0 +1,4 @@
+# Placeholder for infra scripts that need Python (e.g., helper tools, health checks)
+# Add modules as needed, e.g.:
+# boto3==1.28.0
+# requests==2.31.0
