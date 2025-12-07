@@ -10,4 +10,4 @@
 .vscode
 .gitkeep
 *.egg-info/
-.venv/
+.venv
