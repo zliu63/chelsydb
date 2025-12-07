@@ -1,8 +1,7 @@
-version: "3.9"
 services:
   db:
     image: postgres:15
-    container_name: testservice1-postgres
+    container_name: chelsydb-postgres
     environment:
       POSTGRES_USER: testuser
       POSTGRES_PASSWORD: testpass
@@ -13,7 +12,7 @@ services:
       - db_data:/var/lib/postgresql/data
       - ./db/init:/docker-entrypoint-initdb.d
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U testuser"]
+      test: ["CMD-SHELL", "pg_isready -U testuser -d chelsydb"]
       interval: 10s
       timeout: 5s
       retries: 5
