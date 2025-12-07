@@ -6,7 +6,7 @@ services:
     environment:
       POSTGRES_USER: testuser
       POSTGRES_PASSWORD: testpass
-      POSTGRES_DB: cherrydb
+      POSTGRES_DB: chelsydb
     ports:
       - "5432:5432"
     volumes:

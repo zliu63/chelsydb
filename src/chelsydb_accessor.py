@@ -5,11 +5,11 @@ import psycopg
 
 
 def get_conn():
-    """Create a new connection to cherrydb using environment variables with sensible defaults."""
+    """Create a new connection to chelsydb using environment variables with sensible defaults."""
     return psycopg.connect(
         host=os.getenv("DB_HOST", "localhost"),
         port=os.getenv("DB_PORT", "5432"),
-        dbname=os.getenv("DB_NAME", "cherrydb"),
+        dbname=os.getenv("DB_NAME", "chelsydb"),
         user=os.getenv("DB_USER", "testuser"),
         password=os.getenv("DB_PASSWORD", "testpass"),
     )
